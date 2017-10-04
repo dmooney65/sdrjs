@@ -16,8 +16,9 @@
         ],
         [
           'OS=="win"', {
+	          'include_dirs': ['<(rtlsdr_include_dir)'],
             "libraries" : [
-              '<(module_root_dir)/gyp/lib/librtlsdr.dll.a'
+              '<(rtlsdr_lib_dir)rtlsdr.lib'
             ]
           }
         ]

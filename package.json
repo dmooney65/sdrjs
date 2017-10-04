@@ -5,7 +5,7 @@
   "main": "addon.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/brenca/sdrjs.git"
+    "url": "git://github.com/dmooney65/sdrjs.git"
   },
   "keywords": [
     "librtlsdr",
