@@ -8,7 +8,14 @@
       ],
       "conditions" : [
         [
-          'OS!="win"', {
+          'target_arch=="arm"', {
+            "libraries" : [
+              '<(arm_lib_dir)librtlsdr.so.0'
+            ]
+          }
+        ],
+        [
+          'OS!="win" and target_arch!="arm"', {
             "libraries" : [
               '-lrtlsdr',
             ],
